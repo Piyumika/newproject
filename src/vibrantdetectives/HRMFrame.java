@@ -57,7 +57,6 @@ public class HRMFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Vibrant Detectives (PVT) LTD");
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1300, 700));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1300, 700));
@@ -105,6 +104,11 @@ public class HRMFrame extends javax.swing.JFrame {
         jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Dinuka.T\\Desktop\\Project\\add.png")); // NOI18N
         jButton5.setText("Add");
         jButton5.setBorder(null);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -202,6 +206,11 @@ public class HRMFrame extends javax.swing.JFrame {
 PayrollFrame pf = new PayrollFrame();
 pf.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+  NewEmployee ne = new NewEmployee();
+       ne.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
